@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: rgb(52, 59, 156);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 225px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    padding-right: 200px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.serv {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 80px;
+    padding-left: 240px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.pagination-button {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 2px;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.pagination-button:hover:not(.active) {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+  
+.pagination-button.active {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: default;
+}
+  
+.pagination-button.disabled {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+  
+.pagination-button.previous,
+.pagination-button.next {
+    font-size: 14px;
+    padding: 6px 12px;
+    margin: 0 2px;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  
+.pagination-button.previous:hover:not(.disabled),
+.pagination-button.next:hover:not(.disabled) {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+  
+.pagination-button.previous:disabled,
+.pagination-button.next:disabled {
+    color: #6c757d;
+    background-color: #fff;
+    border-color: #dee2e6;
+    cursor: not-allowed;
+}
+
+  
+  
+
+footer {
+    margin-top: 100px;
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 50px 0;
+}
+  
+footer h4 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+  
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+footer ul li {
+    margin-bottom: 10px;
+}
+  
+footer ul li a {
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+  
+footer ul li a:hover {
+    text-decoration: underline;
+}
+  
+footer p {
+    font-size: 14px;
+    margin: 0;
+}
+  
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+  
+footer a {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+footer a:last-child {
+    margin-right: 0;
+}
+  
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+  
+footer .col-md-3 {
+    flex-basis: 25%;
+}
+  
+footer .col-md-3 ul li:before {
+    content: "\2022";
+    color: #d1c4e9;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+  
+footer .col-md-3 ul li a:hover {
+    color: #c5cae9;
+}
+  
+footer p.footer-link {
+    margin-top: 20px;
+}
+  
+footer .app-store {
+    display: flex;
+    margin-bottom: 20px;
+}
+  
+footer .app-store img {
+    max-width: 140px;
+    height: auto;
+}
+  
+footer .app-store a:last-child img {
+    margin-left: 10px;
+}
+  
+footer .legal {
+    font-size: 12px;
+    color: #d1c4e9;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+}
+  
+@media (max-width: 767px) {
+    footer .col-md-3 {
+      margin-bottom: 30px;
+    }
+}

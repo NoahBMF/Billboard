@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="filter.css">
+    <link rel="stylesheet" href="cards.css">
+    <script src="main.js"></script>
+
+    <title>Billboard</title>
+    <link rel="icon" href="Icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+
+        <div class="logo">
+            <a href="main.html">
+                <img src="https://billbord.kz/nuxt/img/logo.fa6e1e0.svg" alt="logo" data-v-71ab07f8>
+            </a>
+        </div>
+
+        <nav class="nav">
+          <a href="main.html">Services</a>
+          <a href="basket.html">Basket</a>
+          <a href="#">Log in</a>
+          <a href="#">Sign up</a>
+        </nav>
+
+      </header>
+
+      <div class="serv">
+        <h1>Services</h1><br>
+      </div>
+
+      <div class="filter">
+
+        <div class="filter-select">
+          <label for="region">Region:</label>
+          <select id="region" name="region">
+            <option value="all" selected>All</option>
+            <option value="almaty">Almaty</option>
+            <option value="astana">Astana</option>
+            <option value="shymkent">Shymkent</option>
+          </select>
+        </div>
+      
+        <div class="filter-range">
+          <label for="price-from">Price From:</label>
+          <input type="text" id="price-from" name="price-from" pattern="\d+" placeholder="0" required>
+      
+          <label for="price-to">Price To:</label>
+          <input type="text" id="price-to" name="price-to" pattern="\d+" placeholder="100000" required>
+        </div>
+      
+        <button type="submit" id="show-button">Show</button>
+      </div>    
+      
+    <div class="product-card-container">
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/207/162540852368913342-%D0%BF%D1%80.%D0%A2%D1%83%D1%80%D0%B0%D0%BD%20%D0%91%D0%A6%20SAAD,%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%20Marriott.png" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Shymkent</span>
+                <h4><a href="">Led display</a></h4>
+                <p>пл. Аль-Фараби</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>75,000 тг</small>65,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/220/16270329691474343434-%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0-%20%D0%90%D0%B1%D0%B0%D1%8F.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Mediaboard</a></h4>
+                <p>ул. Кенесары</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>85,000 тг</small>75,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/204/162540696962893098-%D1%83%D0%BB.%D0%94%D0%BE%D1%81%D1%82%D1%8B%D0%BA,%20%D0%A2%D0%A0%D0%A6%20%C2%AB%D0%A5%D0%B0%D0%BD%20%D0%A8%D0%B0%D1%82%D1%8B%D1%80%C2%BB%20%C2%ABFitness%20Palace%C2%BB%20%D0%91%D0%A6%20%C2%ABSAAD%C2%BB.png" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">City format</a></h4>
+                <p>ул.Достык, ТРЦ «Хан Шатыр»</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>70,000 тг</small>65,000тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/221/16270333091954748295-%D0%A1%D0%B0%D1%80%D1%8B%D0%B0%D1%80%D0%BA%D0%B0-%20%D0%9A%D0%B5%D0%BD%D0%B5%D1%81%D0%B0%D1%80%D1%8B.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Mediaboard</a></h4>
+                <p>пр. Сарыарка- ул. Кенесары</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>80,000 тг</small>75,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product-card-container1">
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/232/163093694471092896-webview_tmp_file3015331726489503564.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Almaty</span>
+                <h4><a href="">Billboard</a></h4>
+                <p>пр.ТРЦ Forum</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>90,000 тг</small>85,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/219/1627032536562851063-%D0%A0%D0%B5%D1%81%D1%83%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0-%20%D0%9A%D0%B5%D0%BD%D0%B5%D1%81%D0%B0%D1%80%D1%8B.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Mediaboard</a></h4>
+                <p>пр. Республики ул.Кенесары</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>65,000 тг</small>60,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/216/1627030947986329466-%D0%A5%D0%B0%D0%BD%20%D0%A8%D0%B0%D1%82%D1%8B%D1%80%201.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Led display</a></h4>
+                <p>пр. Туран- ул. Кунаева </p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>95,000 тг</small>90,000тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/184/16248090011997947671-%D0%96%D0%94%20%D0%92%D0%9E%D0%9A%D0%97%D0%90%D0%9B%20%C2%AB%D0%9D%D0%A3%D0%A0%D0%9B%D0%AB%20%D0%96%D0%9E%D0%9B%C2%BB%20%D0%BD%D0%B0%205%20%D1%8D%D1%82%D0%B0%D0%B6%D0%B5%208%D1%88%D1%82%20%20(1).png" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Led display</a></h4>
+                <p>ЖД ВОКЗАЛ «НУРЛЫ ЖОЛ»</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>100,000 тг</small>95,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="product-card-container2">
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/208/1625408793375043280-%D0%BF%D1%80.%D0%9A%D0%B0%D0%B1%D0%B0%D0%BD%D0%B1%D0%B0%D0%B9%20%D0%91%D0%B0%D1%82%D1%8B%D1%80%D0%B0%20%D0%A6%D0%B8%D1%80%D0%BA,.png" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Led display</a></h4>
+                <p>пр.Кабанбай Батыра-Цирк</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>55,000 тг</small>50,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/214/1627029073727305427-%D0%9A%D0%B0%D0%B7%D0%9C%D1%83%D0%BD%D0%B0%D0%B9%D0%93%D0%B0%D0%B7%203.jpeg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Almaty</span>
+                <h4><a href="">Led display</a></h4>
+                <p>Проспект Абая</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>100,000 тг</small>90,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/230/16308388401936607132-IMG-20200225-WA0043.jpg" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Shymkent</span>
+                <h4><a href="">City format</a></h4>
+                <p>ул. Айтеке би</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>50,000 тг</small>45,000тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="badge">Hot</div>
+            <div class="product-tumb">
+                <img src="https://admin.billbord.kz/media/ad-service-file/179/1624807503440473222-%D1%83%D0%BB.%20%D0%90%D0%BA%D0%BC%D0%B5%D1%88%D0%B8%D1%82%20%D1%83%D0%B3%D0%BE%D0%BB%20%D1%83%D0%BB.%20%D0%94.%20%D0%9A%D1%83%D0%BD%D0%B0%D0%B5%D0%B2%D0%B0.png" alt="">
+            </div>
+            <div class="product-details">
+                <span class="product-catagory">Astana</span>
+                <h4><a href="">Mediaboard</a></h4>
+                <p>угол ул. Д. Кунаева</p>
+                <div class="product-bottom-details">
+                    <div class="product-price"><small>60,000 тг</small>50,000 тг</div>
+                    <div class="product-links">
+                        <a href=""><i class="fa fa-heart"></i></a>
+                        <a href=""><i class="fa fa-shopping-cart"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="pagination">
+        <button class="pagination-button previous" onclick="prevPage()">&laquo;</button>
+        <button class="pagination-button" onclick="goToPage(1)">1</button>
+        <button class="pagination-button" onclick="goToPage(2)">2</button>
+        <button class="pagination-button active" onclick="goToPage(3)">3</button>
+        <button class="pagination-button next" onclick="nextPage()">&raquo;</button>
+      </div>
+    
+      
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#">Outdoor Advertising</a></li>
+                <li><a href="#">Digital Advertising</a></li>
+                <li><a href="#">Event Promotion</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h4>Connect</h4>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <p class="legal">&copy; 2023 Happy Client. All rights reserved.</p>
+        </div>
+      </footer>
+
+     
+      
+</body>
+</html>

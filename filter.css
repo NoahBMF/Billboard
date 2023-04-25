@@ -1,0 +1,86 @@
+.filter {
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin-left: 240px;
+    margin-right: 400px;
+}
+
+.filter-select {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.filter-select label {
+    font-size: 20px;
+    color: #333;
+    margin-left: 20px;
+    margin-right: 40px; 
+}
+
+.filter-select select {
+    padding: 10px 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    appearance: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 20px; 
+}
+
+.filter-select select:focus {
+    outline: none;
+}
+
+.filter-range {
+    align-items: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.filter-range label {
+    font-size: 18px;
+    color: #333;
+    margin-right: 20px; 
+}
+
+.filter-range input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    width: 80px;
+    text-align: right;
+    margin-right: 20px; 
+}
+
+.filter-range input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+#show-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#show-button:active {
+    transform: translateY(2px);
+  }
